@@ -1,0 +1,29 @@
+<head>
+  <title>selector</title>
+</head>
+
+<body>
+    <h1>Welcome to AutoForm Selector test!</h1>
+ 
+</body>
+
+<template name="hello">
+  <button id="route1">Route 1</button>
+</template>
+
+<template name="MenuLayout">
+  {{>yield}}
+</template>
+
+<template name="route1">
+  <h2>Route 1</h2>
+  {{#autoForm autosave=true trimStrings=false schema=label.form.schema id=label.form.id }}
+      {{> afFieldInput firstOption=false name='optionfield' }}
+  {{/autoForm}}
+  <div>
+    Option selected : {{optionselected}}
+  </div>
+  <div>
+    <button id="back">Back</button>
+  </div>
+</template>
