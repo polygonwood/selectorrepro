@@ -28,3 +28,4 @@ iron:router
 aldeed:autoform
 communitypackages:autoform-bootstrap4
 session
+polygonwood:autoform-td-datetimepicker

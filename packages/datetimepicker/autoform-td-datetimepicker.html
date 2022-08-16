@@ -1,0 +1,10 @@
+<template name="afTempusDominusDateTimePicker">
+    <div class='input-group date col-sm-6' id="{{pickerId}}" data-td-target-input="nearest" data-td-target-toggle='nearest'>
+        <div class="input-group-prepend" data-td-target='#{{pickerId}}' data-td-toggle='datetimepicker'>
+            <span class="input-group-text">
+                <i class="fa-solid fa-calendar-day"></i>
+            </span>
+        </div>
+        <input type="text" value="" {{atts}} data-td-target='#{{pickerId}}'/>
+    </div>
+</template>

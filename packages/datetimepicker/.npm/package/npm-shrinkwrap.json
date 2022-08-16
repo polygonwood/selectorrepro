@@ -1,0 +1,15 @@
+{
+  "lockfileVersion": 1,
+  "dependencies": {
+    "@eonasdan/tempus-dominus": {
+      "version": "6.0.0-beta9",
+      "resolved": "https://registry.npmjs.org/@eonasdan/tempus-dominus/-/tempus-dominus-6.0.0-beta9.tgz",
+      "integrity": "sha512-MOS0KGGcQf5s46ftAo2knHPsU6iQpQpo2KJ52g/4tMhhI7XXizAzOda5LYzCnUkhfkCeF3q7fus3UXAAnHWOKA=="
+    },
+    "luxon": {
+      "version": "2.3.2",
+      "resolved": "https://registry.npmjs.org/luxon/-/luxon-2.3.2.tgz",
+      "integrity": "sha512-MlAQQVMFhGk4WUA6gpfsy0QycnKP0+NlCBJRVRNPxxSIbjrCbQ65nrpJD3FVyJNZLuJ0uoqL57ye6BmDYgHaSw=="
+    }
+  }
+}

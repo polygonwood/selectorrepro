@@ -1,14 +1,20 @@
 <head>
   <title>selector</title>
+  <link rel="stylesheet" href="/fontawesome/css/fontawesome.css" />
+  <link rel="stylesheet" href="/fontawesome/css/solid.css" />
+  <link rel="stylesheet" href="/fontawesome/css/regular.css" />
+  <!-- <link rel="stylesheet" href="/td/css/tempus-dominus.css"> -->
+
 </head>
 
 <body>
-    <h1>Welcome to AutoForm Selector test!</h1>
- 
+  
 </body>
 
 <template name="hello">
+  <h1>Welcome to AutoForm Selector test!</h1>
   <button id="route1">Route 1</button>
+  <button id="route2">Route 2</button>
 </template>
 
 <template name="MenuLayout">
@@ -17,8 +23,13 @@
 
 <template name="route1">
   <h2>Route 1</h2>
+  
   {{#autoForm autosave=true trimStrings=false schema=label.form.schema id=label.form.id }}
-      {{> afFieldInput firstOption=false name='optionfield' }}
+  <!-- {{#autoForm trimStrings=false schema=label.form.schema id=label.form.id }} -->
+  {{> afFieldInput firstOption=false name='optionfield' }}
+  {{> afQuickField name='date' }}
+  {{> afQuickField name='date2' }}
+  {{> afQuickField name='simple' }}
   {{/autoForm}}
   <div>
     Option selected : {{optionselected}}

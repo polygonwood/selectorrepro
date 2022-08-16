@@ -1,0 +1,45 @@
+<template name="theatre">
+    <h1>Welcome to Theatre seat selector test!</h1>
+    <div class="container">
+        <div>
+            <button id="design">Design</button>
+            <button id="weight">Weights</button>
+            <button id="reserve">Reservations</button>
+            <button id="sell">Sales</button>
+        </div>
+        {{#if weightMode}}
+        <div>
+            <button id="standard">Standard</button>
+            <button id="medium">Medium</button>
+            <button id="premium">Premium</button>
+        </div>
+        {{/if}}
+        {{#if sellMode}}
+           <button id="sell1">Sell 1</button>
+           <button id="sell2">Sell 2</button>
+           <button id="sell3">Sell 3</button>
+        {{/if}}
+        <div class="theatre">
+            <div class="cinema-seats">
+                {{#each column in columns}}
+                {{>columnseats column}}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name='columnseats'>
+    <div class="{{leftrightClass}} {{columnClass}}">
+        {{#each seat in columnSeats}}
+        {{>seatRep seat}}
+        {{/each}}
+    </div>
+    {{#if columnJump}}
+    <div class="columnJump"></div>
+    {{/if}}
+</template>
+
+<template name='seatRep'>
+    <div class="seat {{seatClass}}" aria-label="{{index}}" data-balloon-pos="up"></div>
+</template>

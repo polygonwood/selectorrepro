@@ -9,10 +9,14 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.17.9",
+    "@eonasdan/tempus-dominus": "^6.0.0-beta9",
     "@popperjs/core": "^2.11.5",
-    "bootstrap": "^5.2.0",
+    "bootstrap": "^4.5.0",
+    "bootstrap-icons": "^1.0.0-alpha3",
     "jquery": "^3.6.0",
+    "luxon": "^2.3.2",
     "meteor-node-stubs": "^1.2.1",
+    "popper.js": "^1.16.1",
     "simpl-schema": "^1.12.3"
   },
   "meteor": {
